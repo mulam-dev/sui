@@ -1,0 +1,96 @@
+.ui-root {
+    --c-prim: #3584E4;
+    --c-bg-1: #1b1b1b;
+    --c-bg-2: #222222;
+    --c-bg-3: #2d3035;
+    --c-bg-4: #3f4349;
+    --c-fg-1: #C9D0D8;
+    --c-fg-2: #A1ACBB;
+    --c-fg-3: #79899E;
+    display: flex;
+    flex-direction: column;
+    color: var(--c-fg-1);
+    padding: 8px;
+}
+
+.ui-core-collect {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--c-bg-4);
+    background: var(--c-bg-2);
+    box-shadow: var(--c-bg-1) 0 0 8px 4px;
+}
+
+.ui-core-collect-label {
+    border-bottom: var(--c-bg-4) solid 1px;
+    padding: 4px 6px;
+    background-color: var(--c-bg-3);
+    font-size: 0.9em;
+}
+
+.ui-core-collect-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.ui-core-collect-methods {
+    display: flex;
+    justify-content: end;
+    border-top: var(--c-bg-4) solid 1px;
+}
+
+.ui-core-method {
+    outline: none;
+    border: none;
+    border-left: var(--c-bg-4) solid 1px;
+    background: var(--c-bg-3);
+    padding: 6px 16px;
+    color: var(--c-fg-1);
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.ui-core-method:hover {
+    outline: var(--c-prim) solid 1px;
+    border-color: var(--c-bg-3);
+    background: var(--c-bg-3);
+}
+
+.ui-core-method:active {
+    outline: var(--c-prim) solid 1px;
+    border-color: var(--c-bg-1);
+    background: var(--c-bg-1);
+}
+
+.ui-core-string {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--c-bg-4);
+    background: var(--c-bg-2);
+    box-shadow: var(--c-bg-1) 0 0 0 2px;
+    margin: 4px;
+}
+
+.ui-core-string-label {
+    min-width: 6em;
+    padding: 0 6px;
+    color: var(--c-fg-2);
+}
+
+.ui-core-string-input {
+    flex: 1 1;
+    outline: none;
+    border: none;
+    border-left: 1px solid var(--c-bg-4);
+    background: var(--c-bg-3);
+    color: var(--c-fg-2);
+    padding: 4px 8px;
+    font-family: monospace;
+}
+
+.ui-core-string-input:focus {
+    outline: var(--c-prim) solid 1px;
+    border-color: var(--c-bg-1);
+    background: var(--c-bg-1);
+}

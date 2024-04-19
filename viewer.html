@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUI Viewer</title>
+    <!-- <link rel="stylesheet" href="viewer.css"> -->
+    <style>
+        html {
+            background: #222222;
+        }
+
+        html, body {
+            width: 100%; height: 100%;
+            padding: 0; margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+            cursor: default;
+            color: #c7d0da;
+            font-size: 14px;
+        }
+    </style>
+    <link rel="stylesheet" href="interface/basic/style.css">
+</head>
+<body>
+    <!-- <div class="view vbox">
+        <div class="hbox">
+            <div class="label"><b>SUI Viewer</b></div>
+        </div><hr>
+        <div class="vbox f-scroll" id="scope">
+        </div>
+    </div> -->
+    <script src="viewer.js" type="module"></script>
+</body>
+</html>
